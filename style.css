@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+body {
+    background: rgb(225,225,225);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    margin-top: 10px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.menu {
+    margin-top: 20px;
+    float:right;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin: 0 15px;
+}
+
+.menu a.btn-cta {
+    background: #30851d;
+    color: white;
+    font-size: 16px;
+    padding: 8px 25px;
+}
+
+section.top {
+    background: white;
+    padding: 30px 0;
+}
+
+.txt-top {
+    float: left;
+    width: 50%;
+    color: #11223f;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.txt-top h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.txt-top p {
+    font-size: 20px;
+}
+
+.img-top {
+    float: left;
+    width: 50%;
+}
+
+.img-top img {
+    max-width: 100%;
+}
+
+section.testimonials {
+    padding: 30px 0;
+}
+
+section.testimonials > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test-single {
+    background: white;
+    background-image: url(images/quote.png);
+    background-size: 55px 40px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.test-single p {
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+}
+
+.test-single span {
+    color: green;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+section.about {
+    padding: 20px 0;
+}
+
+.about-title h2 {
+    color: black;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2bb222;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.about-single {
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.title-single {
+    display: flex;
+}
+
+.title-single i {
+    background-color: #2bb222;
+    width: 20%;
+    position: relative;
+    padding-top: 20px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.title-single h3 {
+    color: black;
+    background: #f1f6f1;
+    width: 80%;
+    padding: 30px;
+    margin: 0;
+}
+
+.about-cnt {
+    background: white;
+    padding: 30px;
+    color: black;
+}
+
+footer {
+    background: #effeee;
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+
+}
+
+footer i {
+    color: #515151;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .about-single {
+        width: 100%;
+    }
+
+    .txt-top,
+    .img-top {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .img-top {
+        text-align: center;
+    }
+
+    .test-single {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .menu .btn-cta {
+        display: block;
+        margin-top: 10px;
+    }
+}
